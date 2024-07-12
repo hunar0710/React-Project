@@ -1,0 +1,52 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .home-content {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .home-subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .login-link {
+    text-decoration: none;
+  }
+  
+  .login-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #45a049;
+  }
+  
+  .illustration-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .illustration-image {
+    max-width: 100%;
+    height: auto;
+  }

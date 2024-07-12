@@ -1,0 +1,122 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  
+  .main {
+    display: flex;
+    flex: 1;
+    background-color: #ffffff;
+  }
+  
+  
+  .sidebar {
+    width: 250px;
+    background-color: #34495e;
+    color: #020e12;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s;
+  }
+  
+  .sidebar:hover {
+    width: 270px;
+  }
+  
+  .sidebar-link {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #010b0d;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 8px;
+  }
+  
+  .sidebar-link i {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  .sidebar-link:hover {
+    background-color: #f0f4f7;
+    transform: translateX(10px);
+  }
+  
+  .sidebar-link span {
+    font-size: 1.2em;
+  }
+  
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    overflow-y: auto;
+  }
+  
+  
+  .navbar {
+    background-color: #2c3e50;
+    color: #021215;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .navbar .menu {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar .menu a {
+    color: #010f12;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+  }
+  
+  .navbar .menu a:hover {
+    color: #3498db;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+  
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+  
+    .content {
+        margin: 0;
+        border-radius: 0;
+    }
+  
+    .navbar .menu {
+        display: none; 
+    }
+  }
